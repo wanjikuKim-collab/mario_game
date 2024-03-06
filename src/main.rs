@@ -3,11 +3,17 @@ struct Position{
     y: u32,
 }
 
-
-struct Marion{
+struct Mario{
     position: Position,
     coins: u32,
     power_up: Option<PowerUp>
+}
+
+enum PowerUp{
+    SuperMushroom,
+    FireFlower,
+    Starman,
+    CapeFeather,
 }
 
 fn main() {
