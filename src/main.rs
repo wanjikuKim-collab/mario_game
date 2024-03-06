@@ -9,6 +9,14 @@ struct Mario{
     power_up: Option<PowerUp>
 }
 
+impl Mario {
+    fn jump(&mut self){
+        self.position.y += 1;
+
+    }
+    
+}
+
 enum PowerUp{
     SuperMushroom,
     FireFlower,
