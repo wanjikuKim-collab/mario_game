@@ -17,5 +17,16 @@ enum PowerUp{
 }
 
 fn main() {
-    println!("Hello, world!");
+    // at the beginning of the game
+    let position = Position{
+        x: 0,
+        y: 0,
+    };
+
+    let mario = Mario{
+        position: position,
+        coins: 0,
+        power_up: None,
+    };
+
 }
